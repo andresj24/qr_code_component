@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    
+    --White: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+html {
+    
+    font-size: 62.5%; /*1rem = 10px*/   
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--slate-300);
+}
+
+.container {
+    max-width: 32rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: var(--White);
+    text-align: center;
+    padding: 1.5rem;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.container h1 {
+    font-size: 2.3rem;
+    margin: 20px 0 10px;
+    color: var(--slate-900);
+}
+
+.container p {
+    margin: 2rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--slate-500);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px; 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 350px) {
+    .container {
+        max-width: 90%; 
+    }
+}
+
+
+
+
+
+
+
